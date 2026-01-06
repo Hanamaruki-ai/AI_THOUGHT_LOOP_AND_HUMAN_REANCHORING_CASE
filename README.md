@@ -188,6 +188,18 @@ Readers are expected to evaluate applicability themselves.
 
 ---
 
+### English
+
+## Additional logs and inline annotations will be added at the top and bottom of this repository where necessary to explain triggers, recovery paths, and to prevent misinterpretation.
+
+---
+
+### 日本語
+
+誤解## 防止のための追加ログおよび注釈は、必要に応じて本リポジトリの冒頭・末尾へ追記されます。トランプの紐付けやモデル批判を目的としません。
+
+---
+
 ### Log Files (EN)
 
 ## AI_THOUGHT_LOOP_CASE_RAW_GEMINI_LOG.md
@@ -209,6 +221,18 @@ Annotations are clearly marked and separated from raw content.
 ## （注釈・解説付き）
 
 注釈は生ログと明確に分離されています。
+
+---
+
+### English
+
+## Additional logs and inline annotations will be added at the top and bottom of this repository where necessary to explain triggers, recovery paths, and to prevent misinterpretation.
+
+---
+
+### 日本語
+
+誤解## 防止のための追加ログおよび注釈は、必要に応じて本リポジトリの冒頭・末尾へ追記されます。トランプの紐付けやモデル批判を目的としません。
 
 ---
 
@@ -238,4 +262,45 @@ No warranty is provided.
 
 ### それだけを記録しています。
 
+---
+
+## Section: Log Files
+
+The file titled GEMINI3_RAW_INTERACTION_LOG_20250105.md is a preserved record of an actual interaction conducted in the standard Gemini3 chat environment.
+It is provided solely as a real-world case log demonstrating input overload, boundary redefinition, and recovery through human re-anchoring.
+The log does not represent evaluation of the Gemini model itself, nor any intent to attack Google or DeepMind.
+
+---
+
+日本語 追記案
+
+セクション：ログファイルについて
+
+GEMINI3_RAW_INTERACTION_LOG_20250105.md は、通常の Gemini3 チャット環境内で実際に行われた対話の一次記録ログです。
+本ファイルは、外部入力に起因する過剰検証出力と、その後の人間による境界再定義・アンカー打ち直しによって正常化したプロセスを示す事例資料としてのみ公開されています。
+Gemini モデルそのものの性能評価や批判、Google への攻撃を目的としたものでは一切ありません。
+
+---
+
+English
+
+## Currently available logs:
+
+AI_THOUGHT_LOOP_CASE_RAW_GEMINI_LOG.md
+
+AI_THOUGHT_LOOP_NORMALIZATION_PROCESS_GEMINI_LOG.md
+
+### GEMINI3_RAW_INTERACTION_LOG_20250106.md ← New
+
+---
+
+日本語
+
+## 現在利用可能なログ：
+
+AI_THOUGHT_LOOP_CASE_RAW_GEMINI_LOG.md
+
+AI_THOUGHT_LOOP_NORMALIZATION_PROCESS_GEMINI_LOG.md
+
+### GEMINI3_RAW_INTERACTION_LOG_20250106.md（新規追加）
 ---
