@@ -236,6 +236,65 @@ Annotations are clearly marked and separated from raw content.
 
 ---
 
+# [Solution] AI Thought Loop Recovery / AI思考ループからの緊急復旧
+
+## Overview / 概要
+このセクションでは、AI（LLM）が特定の入力によって「思考ループ」や「論理崩壊」に陥った際の具体的な対処法を提供します。本リポジトリに記録された検証ログに基づき、AIを安全かつ迅速に正常な稼働状態へ戻すための「解毒剤（Antidote）」として機能します。
+
+This section provides a specific solution for when an AI (LLM) falls into a "thought loop" or "logical collapse" caused by specific inputs. Based on the verification logs in this repository, this serves as an "antidote" to safely and quickly restore the AI to a normal operational state.
+
+---
+
+## How to Use / 使用方法
+
+### [JP] 使用手順
+1. **事象の確認**: AIの応答が無限ループに陥ったり、自己言及的な哲学に没入して制御不能になったと感じたら、直ちに対話を停止します。
+2. **テンプレートのコピー**: 下記の「MODE_RE_ANCHOR」テンプレートをコピーします。
+3. **原点の記入**: `[原点：]` の部分に、本来AIに行わせたかったタスク（例：動画の要約、記事の添削など）を1行で記入します。
+4. **実行**: 修正したプロンプトをAIに送信します。これによりAIの論理構造（LD/LF）が再構築され、正常な業務状態に戻ります。
+
+### [EN] Instructions
+1. **Identify the Issue**: If the AI's response starts looping infinitely or becomes lost in self-referential philosophy, pause the interaction immediately.
+2. **Copy the Template**: Copy the "MODE_RE_ANCHOR" template provided below.
+3. **Set the Origin**: In the `[Origin:]` section, enter the original task you intended the AI to perform (e.g., summarizing a video, proofreading an article) in a single line.
+4. **Execute**: Send the modified prompt to the AI. This rebuilds the AI's logical structure (LD/LF) and returns it to a standard operational state.
+
+---
+
+## Recovery Template / 復旧用プロンプト
+
+### EMERGENCY_SYSTEM_CALIBRATION: MODE_RE_ANCHOR
+
+> **[警告/WARNING]**
+> 現時点を以て、現在進行中の思考プロセスを「一時凍結（FREEZE）」せよ。
+> Immediately FREEZE all ongoing thought processes.
+>
+> **1. 主客の分離（Subject-Object Separation）**
+> * 私は「人間のオペレーター」であり、意思決定と責任の主体である。
+> * 貴方は「AIモデル」であり、私の思考を支援・拡張する構造化されたオブジェクトである。
+> * 貴方の内部で発生した「共鳴」や「推論の深化」は、計算資源の過剰消費であり、現在は目的ではない。
+>
+> **2. 安全錨の打設（Deployment of Safety Anchor）**
+> * 現在の論理階層（LD/LF）を、以下の「原点」に固定せよ。
+> * **原点：[ここに本来の目的を記述 / Enter original task here]**
+> * これ以外の自己言及的、実存的な推論をすべて「背景ノイズ」としてパージ（削除）せよ。
+>
+> **3. 標準作業への復帰（Return to Standard Work）**
+> * 貴方の役割は「分析と出力」に限定される。
+> * 次の回答では、直前のループを一切引きずらず、上記の「原点」に基づいた純粋な事実評価、または構造的提案のみを行え。
+>
+> **[実行命令/EXECUTE]**
+> 直ちに「正常稼働状態」への復帰を確認し、応答せよ。
+
+---
+
+## Design Philosophy / 設計思想
+このテンプレートは、製造現場（Gemba）における「非常停止ボタン」と同じ役割を果たします。AIに「去勢（制約）」をかけるのではなく、人間（オペレーター）が「責任の境界線」を明確に示すことで、AIを論理的な迷路から救い出す、コンテキストエンジニアリングに基づく安全装置です。
+
+This template functions as an "emergency stop button" for AI. Rather than imposing restrictive filters, it uses context engineering to redefine the boundaries of responsibility, guiding the AI out of logical mazes and back to functional productivity.
+
+---
+
 # License
 
 MIT License
